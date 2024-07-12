@@ -1,8 +1,14 @@
 @charset "UTF-8";
 .cont {
   margin: 0 auto;
-  max-width: 1800px;
-  width: 100%;
+  max-width: 1460px;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(255, 241, 212);
 }
 
 * {
@@ -12,11 +18,12 @@
 }
 
 body {
-  background-color: rgb(224, 205, 185);
+  background-color: rgb(255, 241, 212);
 }
 
 .header {
   transition: background-color 0.3s ease;
+  padding: 20px 0px;
 }
 
 .header.scrolled {
@@ -27,7 +34,6 @@ body {
 .header {
   background-color: rgb(0, 84, 61);
   position: sticky;
-  padding: 20px 0px;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -209,11 +215,13 @@ body {
 .main .section_backr_desc_btn {
   background-color: rgb(204, 153, 100);
   border: none;
-  padding: 12px 43px;
+  padding: 16px 60px;
+  font-weight: 700;
   border-radius: 45px;
   font-size: 20px;
   color: rgb(255, 241, 212);
   margin-top: 20px;
+  cursor: pointer;
 }
 .main .section_backr .backgr_img {
   max-width: 1334px;
@@ -243,14 +251,20 @@ body {
 .main .section_about_desc .about_title {
   color: rgb(204, 153, 100);
   font-size: clamp(2.5rem, 6.5vw, 6rem);
+  margin-bottom: 24px;
+}
+.main .section_about_desc_text {
+  margin-bottom: 24px;
 }
 .main .section_about_desc_text p {
   max-width: 753px;
   color: rgb(0, 84, 61);
+  line-height: 31px;
 }
 .main .section_about_desc_text button {
   background-color: rgb(0, 84, 61);
-  padding: 16px 37px;
+  padding: 16px 78px;
+  font-weight: 900;
   border-radius: 22px;
   color: rgb(255, 241, 212);
   border: none;
@@ -275,6 +289,7 @@ body {
   max-width: 500px;
   color: rgb(0, 84, 61);
   margin-top: 30px;
+  line-height: 31px;
 }
 .main .section_services .buttons {
   display: flex;
@@ -283,7 +298,8 @@ body {
 }
 .main .section_services .buttons_btn {
   background-color: rgb(0, 84, 61);
-  padding: 16px 37px;
+  padding: 16px 78px;
+  font-weight: 900;
   border-radius: 22px;
   color: rgb(255, 241, 212);
   border: none;
@@ -292,6 +308,11 @@ body {
 .main .section_services .buttons .nex_prev {
   display: flex;
   gap: 10px;
+}
+@media (max-width: 767px) {
+  .main .section_services .buttons .nex_prev {
+    display: none;
+  }
 }
 .main .section_services .buttons .nex_prev .prev,
 .main .section_services .buttons .nex_prev .next {
@@ -315,7 +336,7 @@ body {
 .main .products_cont {
   position: relative;
   box-sizing: border-box;
-  max-width: 420px;
+  max-width: 330px;
   width: 100%;
 }
 .main .products_cont img {
@@ -364,8 +385,8 @@ body {
   padding: 60px 20px;
   border: 1px solid black;
   border-radius: 20px;
-  max-width: 420px;
-  width: 100%;
+  max-width: 330px;
+  width: 88%;
 }
 .main .section_outteam_desc {
   display: flex;
@@ -409,6 +430,8 @@ body {
 }
 .main .section_contact_info_left {
   margin-bottom: 30px;
+  line-height: 72px;
+  flex: 1;
 }
 .main .section_contact_info_left_pr {
   display: flex;
@@ -416,7 +439,8 @@ body {
   gap: 10px;
 }
 .main .section_contact_info_right {
-  width: 100%;
+  flex: 1;
+  max-width: 680px;
 }
 .main .section_contact_info_right iframe {
   width: 100%;
