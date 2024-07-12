@@ -178,6 +178,9 @@ body {
   transition: ease 1s;
 }
 
+.main {
+  padding-bottom: 80px;
+}
 .main .section_backr {
   background-color: rgb(0, 84, 61);
   display: flex;
@@ -332,6 +335,11 @@ body {
   min-width: 100%;
   box-sizing: border-box;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .main .products_slide {
+    display: none;
+  }
 }
 .main .products_cont {
   position: relative;

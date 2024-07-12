@@ -208,6 +208,7 @@ body {
 //             MAIN
 
 .main {
+  padding-bottom: 80px;
   .section_backr {
     background-color: rgba(0, 84, 61, 1);
     display: flex;
@@ -371,6 +372,9 @@ body {
       min-width: 100%;
       box-sizing: border-box;
       justify-content: space-between;
+      @include tablet{
+        display: none;
+      }
     }
 
     &_cont {
